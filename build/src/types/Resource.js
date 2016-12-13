@@ -129,15 +129,15 @@ function validateFieldGroup(group, otherFields, isAttributes) {
 }
 
 function validateComplexAttribute(attrOrAttrPart) {
-  if ((0, _utilMisc.isPlainObject)(attrOrAttrPart)) {
-    if (typeof attrOrAttrPart.relationships !== "undefined" || typeof attrOrAttrPart.links !== "undefined") {
-      throw new Error('Complex attributes may not have "relationships" or "links" keys.');
-    }
-    for (var key in attrOrAttrPart) {
-      validateComplexAttribute(attrOrAttrPart[key]);
-    }
-  } else if (Array.isArray(attrOrAttrPart)) {
-    attrOrAttrPart.forEach(validateComplexAttribute);
-  }
+  // if ((0, _utilMisc.isPlainObject)(attrOrAttrPart)) {
+  //   if (typeof attrOrAttrPart.relationships !== "undefined" || typeof attrOrAttrPart.links !== "undefined") {
+  //     throw new Error('Complex attributes may not have "relationships" or "links" keys.');
+  //   }
+  //   for (var key in attrOrAttrPart) {
+  //     validateComplexAttribute(attrOrAttrPart[key]);
+  //   }
+  // } else if (Array.isArray(attrOrAttrPart)) {
+  //   attrOrAttrPart.forEach(validateComplexAttribute);
+  // }
 }
 module.exports = exports["default"];
