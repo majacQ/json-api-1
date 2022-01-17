@@ -23,7 +23,7 @@
     "jade": "1.11.x",
     "lodash": "^3.10.0",
     "negotiator": "ethanresnick/negotiator#full-parse-access",
-    "pluralize": "0.0.11",
+    "pluralize": "8.0.0",
     "q": "1.4.1",
     "qs": "^5.2.0",
     "raw-body": "1.3.x",
